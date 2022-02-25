@@ -4,6 +4,8 @@ import javax.persistence.*;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Data
 @Entity
 public class Product {
@@ -13,24 +15,8 @@ public class Product {
     private Long id;
 
     @Column(nullable = false)
-    private String nome;
+    private String name;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-
-
+    @Column(nullable = false)
+    private BigDecimal price;
 }

@@ -10,8 +10,7 @@ import br.com.depaula.cadastroproduto.repository.ProductRepository;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Produtos")
-
+@RequestMapping("/products")
 public class ProductController {
 
     @Autowired
